@@ -6,7 +6,7 @@ Description: This script animates the footer emojis
 const greetings = [
     { text: "Hello!", class: "hello" },
     { text: "Bonjour!", class: "bonjour" },
-    { text: "¡Hola!", class: "hola" }
+    { text: "Hola!", class: "hola" }
 ];
 let index = 0;
 
