@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Analytics - EV Analytics Hub</title>
+    <link rel="stylesheet" href="CSS/analytics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><span class="company-name">GreenCar+</span></li>
+                <img src="Image/logo.ico" alt="Logo" width="50" height="50">
+                <li><a href="index-page.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="crud-page.html">Database</a></li>
+                <li><a href="analytics-page.html">Analytics</a></li>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>EV Market Analytics</h1>
+        <div class="feature-card">
+            <img src="Image/globalev.png" alt="Track EV Models Image" width="310" height="250">
+            <div class="text">
+                <h2>🚗 Global EV Outlook</h2>
+                <p>The Global EV Outlook 2024 by the International Energy Agency (IEA) provides a detailed analysis of the electric vehicle market, 
+                    covering trends in sales, availability, affordability, and regional market dynamics. It also examines EV charging infrastructure, 
+                    battery demand, and policy developments, offering insights into the impact of EV adoption on emissions and energy consumption..</p>
+            </div>
+            <div class="button">
+                <a href="https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-cars">
+                    <img src="Image/open-book.jpg" alt="Read More" width="50" height="50"> </a>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Electric Vehicle Data Analysis</h2>
+
+            <!-- Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Range (miles)</th>
+                        <th>Price ($)</th>
+                        <th>Region</th>
+                    </tr>
+                </thead>
+                <tbody id="evTableBody">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+
+            <!-- Chart Container -->
+            <div class="chart-wrapper">
+                <div class="chart-container">
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+                <div class="chart-container small-chart">
+                    <canvas id="regionChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 GreenCar+ &#8226; Francisco Jacques &#8226; USF Student 🌞🌟</p>
+        <div id="ev-attribute" class="ev-attribute"></div>
+    </footer>
+
+    <script src="Scripts/analytics.js"></script>
+    <script src="Scripts/an-animes.js"></script>
+</body>
+</html>
