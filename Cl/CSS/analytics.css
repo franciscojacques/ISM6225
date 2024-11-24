@@ -1,0 +1,171 @@
+/*
+Author : Francisco Jacques
+Date : 11\24\2024
+Description: CSS code for analytics page
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #008080, #ffffff);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #4d3838, #FFFDD0);
+
+
+
+  color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+nav ul {
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 70px; /* Creates space below fixed header */
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    margin-right: 20px;
+}
+
+.feature-card .text {
+    flex: 1;
+}
+
+.feature-card .button {
+    margin-left: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-container {
+    flex: 1;
+    margin: 10px;
+}
+
+.chart-container.small-chart {
+    flex: 0.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+footer { 
+    text-align: center; 
+    padding: 20px 0; 
+    background: linear-gradient(to left, #4d3838, #FFFDD0); 
+    color: white; 
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-right: 0; 
+    z-index: 10; /* Ensure it overlaps the logo */
+}
+
+header nav ul li img {
+    margin-right: 20px; 
+    position: relative;
+    z-index: 0; /* Ensure it is behind the company name */
+}
+
+.ev-attribute {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    background: linear-gradient(to left, #1a73e8, #FFC0CB);
+    overflow: hidden; /* Ensure the animation stays within bounds */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.ev-attribute span {
+    display: inline-block;
+    animation: spiral-fade 5s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes spiral-fade {
+    0% { transform: rotate(0deg) translateX(0) rotate(0deg); opacity: 1; }
+    50% { transform: rotate(180deg) translateX(50px) rotate(-180deg); opacity: 0.5; }
+    100% { transform: rotate(360deg) translateX(0) rotate(-360deg); opacity: 0; }
+}
+

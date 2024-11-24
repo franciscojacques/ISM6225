@@ -1,0 +1,75 @@
+<!--Author : Francisco Jacques
+Date : 11\24\2024
+Description: HTML code for Home page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCar+ Hub - Home</title>
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><span class="company-name">GreenCar+</span></li>
+                <img src="Image/logo.ico" alt="Logo" width="50" height="50">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="crud-page.html">Database</a></li>
+                <li><a href="analytics-page.html">Analytics</a></li>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="card card3">
+                <h1>Welcome to GreenCar+ Hub</h1>
+                <div id="greeting-container">
+                    <span class="greeting hola">Hola!</span>
+                    <span class="greeting bonjour">Bonjour!</span>
+                    <span class="greeting hello">Hello!</span>
+                </div>                
+            </div>
+            <div class="card card2">
+                <p>Your comprehensive platform for Electric Vehicle data and insights</p>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <img src="Image/Toyota.jpg" alt="Track EV Models Image" width="310" height="200">
+                <h2>Track EV Models</h2>
+                <p>Access detailed information about various electric vehicles, including range, charging capabilities, and performance metrics.</p>
+                <a href="https://electrek.co" class="btn">
+                    <img src="Image/open-book.jpg" alt="Read More" width="50" height="50">
+                </a>
+            </div>
+            <div class="feature-card">
+                <img src="Image/evmarket.png" alt="Track EV Models Image" width="310" height="200">
+                <h2>Market Analysis</h2>
+                <p>Explore market trends, adoption rates, and growth patterns in the EV industry.</p>
+                <a href="https://blogs.idc.com/2023/09/01/electric-vehicle-market-dynamics-and-competitive-strategies" class="btn">
+                    <img src="Image/open-book.jpg" alt="Read More" width="50" height="50">
+                </a>
+            </div>
+            <div class="feature-card">
+                <img src="Image/envcarben.jpg" alt="Track EV Models Image" width="310" height="200">
+                <h2>Environmental Impact</h2>
+                <p>Understand the environmental benefits of EVs through comprehensive data analysis.</p>
+                <a href="https://steerev.com/electric-vehicles-evs/environmental-benefits-of-electric-vehicles" class="btn">
+                    <img src="Image/open-book.jpg" alt="Read More" width="50" height="50">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 GreenCar+ &#8226; Francisco Jacques &#8226; USF Student</p>
+        <div id="car-parade" class="car-parade"></div>
+    </footer>
+    <script src="Scripts/greeting.js"></script>
+    <script src="Scripts/car-parade.js"></script>
+</body>
+</html>
